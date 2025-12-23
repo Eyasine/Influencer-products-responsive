@@ -188,13 +188,13 @@
 .cardinfo{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 30px;
+  gap: 20px;
 
 }
 
 .card-item{
 
-    padding: 30px;
+    padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 30px 0 rgba(156, 156, 156, 0.2);
     
@@ -209,7 +209,43 @@
   display: flex;
   align-items: center;
 }
+.see-more{
+  color: #E02C6D;
+  margin-left: 90%;
+  margin-top: 30px;
+}
 
+/* featured section */
+.featured-containers{
+  justify-content: space-between;
+  gap: 140px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.featured-title{
+  font-size: 2rem;
+  margin: 0;
+}
+.featured-discription {
+  margin-bottom: 20px;
+}
+.down-btn{
+  border-radius: 8px;
+}
+
+/* footer-info */
+
+.footer-info{
+  width: 100%;
+  background-color: #0A0826;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 0;
+  
+}
+.footer-container{
+  padding: 50px auto;
+}
 
 
 
@@ -225,10 +261,10 @@
     display: none;
   
   }
-  .banner-info, .navbar, .companis-section{
+  .banner-info, .navbar, .companis-section, .cardinfo, .featured-containers{
     margin: 0 20px;
   }
-  .banner-info{
+  .banner-info, .featured-containers{
     text-align: center;
   }
   .companis-section{
@@ -237,6 +273,29 @@
   .companis-section{
     margin: 30px 34px;
     row-gap: 20px;
+  }
+  .cardinfo{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+.section-title{
+  margin: 100px 0 20px 0;
+}
+.card-feature-img{
+  width: 100%;
+}
+.see-more{
+  
+  margin: 30px;
+}
+
+.featured-containers{
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+  .featured-img{
+    
+    max-width: 100%;
   }
 
 }
